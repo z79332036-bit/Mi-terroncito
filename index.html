@@ -1,0 +1,186 @@
+<head>
+
+<style>
+
+body {
+  background-color: #d6d6d6;
+  margin: 0;
+  padding: 160px;
+}
+
+
+.hoja {
+  background-color: #fdfbf5;
+  max-width: 550px;
+  margin: auto;
+  padding: 90px 70px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.25);
+  position: relative; 
+}
+
+ .hoja::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  pointer-events: none;
+
+  background:
+    radial-gradient(circle at center,
+      #d0d0d0 0%,
+      #8a8a8a 35%,
+      #5a5a5a 60%,
+      transparent 70%) 
+    0 18px / 30px 45px repeat-y;
+
+  box-shadow:
+    inset -2px 0 4px rgba(0,0,0,0.3),
+    inset 2px 0 4px rgba(255,255,255,0.4);
+
+ }
+
+.hoja::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  pointer-events: none;
+
+  background:
+    linear-gradient(to right,
+      rgba(0,0,0,0.25),
+      transparent 70%);
+}
+
+</style>
+
+</head>
+
+<div id="estrellas"></div>
+
+<div class="hoja">
+  
+<!DOCTYPE html>
+
+ <html>
+
+<head>
+
+
+<title> Mi terroncito </title>
+<style>
+
+   body {
+    background-color: #000000;
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+</style>
+
+<!-- TU TÍTULO PRINCIPAL GIGANTE -->
+<h1 style="font-size: 55px; color: #000000 ;">Un poco de todo lo que no se puede expresar con palabras</h1>
+
+
+<!-- TU SEGUNDO PÁRRAFO GIGANTE -->
+
+  <p style="font-size: 40px; color: #555555;"
+
+>Aveces lo unico que nesesito de ti es solo una mirada una sonrisa para saber que todo esta bien Estoy enamorado locamente te extraño y el no tenerte me hace mucho daño. Existen las inseguridades, lo se pero alguien que no te ama no se tomaria el tiempo en hacer una pagina de internet
+<p style="font-size: 40px; color: #555555;"
+>Y si la vdd de mis mayores miedos es justamente eso que transcurran años y simplemente conozcas a alguien mas. Con el q si te puedas ver diario lo admito es algo q me genera ansiedad. Existe una frase: Quiero que seas feliz aun si no es conmigo: pero no es mi caso.
+
+"<p style="font-size: 40px; color: #555555;">
+si no eres feliz conmigo no lo seras con nadie ammi o acaso no te gusta Rodriguez Benwille? pq a mi me encanta.
+
+
+</body>
+
+</html>
+
+<button
+    onclick="window.open('https://www.youtube.com/watch?v=PIh2xe4jnpk', '_blank')"
+    style="
+        font-size: 30px;
+        padding: 15px 25px;
+        border-radius: 15px;
+        border: none;
+        cursor: pointer;
+    ">
+    Presiona aqui ;)
+</button>
+
+"<p style="font-size: 40px; color: #000000;">
+   </p>"pd" ( estoy aprendiendo a progamar paginas web no me juzgues) </p>
+   
+   <h1 id="fecha"></h1>
+   
+   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+   
+   <script>
+
+const hoy = new Date();
+
+const meses = [
+  "enero", "febrero", "marzo", "abril",
+  "mayo", "junio", "julio", "agosto",
+  "septiembre", "octubre", "noviembre", "diciembre"
+];
+
+const fecha = document.getElementById("fecha");
+
+fecha.textContent =
+  hoy.getDate() + " de " + meses[hoy.getMonth()];
+
+// Estilo normal
+fecha.style.fontSize = "55px";
+fecha.style.fontWeight = "bold";
+fecha.style.color = "#000000";
+
+// Si es día 9
+if (hoy.getDate() === 9)  {
+
+  fecha.style.color = "#FFD700";
+
+  fecha.style.textShadow =
+    "0 0 5px #FFD700, 0 0 10px #FFD700, 0 0 20px #FFD700";
+
+  confetti({
+    particleCount: 200,
+    spread: 120,
+    origin: { y: 0.6 }
+  });
+
+}
+
+const estrellas = document.getElementById("estrellas");
+
+for (let i = 0; i < 100; i++) {
+
+  const estrella = document.createElement("div");
+
+  estrella.style.position = "absolute";
+
+  estrella.style.width = "2px";
+  estrella.style.height = "2px";
+
+  estrella.style.backgroundColor = "white";
+
+  estrella.style.borderRadius = "50%";
+
+  estrella.style.left = Math.random() * 100 + "%";
+  estrella.style.top = Math.random() * 100 + "%";
+
+  estrellas.appendChild(estrella);
+  
+}
+</script>
+
+<h1 style="font-size: 30px; color: #008800 ;"> pd: cuando la fecha cae en el 9 de cd mes lanza confeti ajskajsk</h1>
+
+</div>
